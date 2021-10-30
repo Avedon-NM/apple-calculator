@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: black;
+}
+
+.container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-div {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: center;
+    grid-gap: 1.5rem;
+}
+
+.screen {
+    background-color: black;
+    color:#d4d4d2;
+    width: 25%;
+    height: 9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6em;
+    text-align: right;
+    padding: 0;
+    margin-right: 4rem;
+}
+
+.screen span {
+    font-size: 6.5rem;
+}
+
+.btn-div button {
+    font-size: 4rem;
+    height: 100px;
+    border-radius: 75px;
+    border: none
+}
+
+.btn-div button:nth-child(17) {
+    grid-column: span 2;
+}
+
+.btn-div .btn-operant, .btn-div .btn-equals {
+    background-color: #ff9500;
+    color:  white;
+}
+
+.btn-div .btn-num{
+    background-color: #505050;
+    color:  white
+}
+
+.btn-div .btn-special{
+    background-color:  #d4d4d2;
+}
+
+.btn-div .btn-operant:focus, .btn-div .btn-equals:active {
+    background-color: #f7f7f7;
+    color:  #ff9500;
+}
+
+.btn-div .btn-special:active{
+    background-color:  white;
+}
+
+.btn-div .btn-num:active {
+    background-color: gray;
+}
+
